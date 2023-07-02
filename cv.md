@@ -46,5 +46,8 @@ new Ajax.Request(url, {
 ## **Education** ##
 I graduated from the Minsk College of Entrepreneurship. And I graduated BSUIR with a degree in software engineer.
 ---
+## **CERTIFICATES** ##
+Zend Certified Engineer (08/2021)
+---
 ## **English level** ##
 **B2**
