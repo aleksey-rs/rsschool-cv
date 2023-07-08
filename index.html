@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-</body>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li>
+                        <a class="header__link" href="#contacts">Contacts</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#summary">Summary</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#project">Project</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#code">Code</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#languages">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="container container--main">
+            <section class="profile" id="profile">
+                <div class="profile__caption">
+                    <h1 class="profile__title">Aleksey Khamiakov</h1>
+                    <h4 class="profile__subtitle">PHP Developer</h4>
+                </div>
+                <img src="./images/image.jpg" class="profile__foto" alt="foto">
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section__title">Contacts</h2>
+                <ul class="section__list">
+                    <li class="section__contact">Belarus, Minsk</li>
+                    <li class="section__contact">Email: <a href="mailto:alekseyrs65@gmail.com" title="email">alekseyrs65@gmail.com</a></li>
+                    <li class="section__contact">Skype: scarabey01</li>
+                    <li class="section__contact">GitHub: <a href="https://github.com/aleksey-rs" title="github">aleksey-rs</a></li>
+                    <li class="section__contact">VK: <a href="https://vk.com/tocker" title="vk">tocker</a></li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section__title">Summary</h2>
+                <p>I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be further improve my IT skills.  My greatest passion is in life is using my technical know-how to benefit other people and organisations.</p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section__title">Education</h2>
+                <p>I graduated from the Minsk College of Entrepreneurship. And I graduated BSUIR with a degree in software engineer.</p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <ul class="section__list">
+                    <li class="section__skill">PHP</li>
+                    <li class="section__skill">HTML5 & CSS3</li>
+                    <li class="section__skill">JavaScript</li>
+                    <li class="section__skill">SQL/MySQL</li>
+                    <li class="section__skill">MVC frameworoks: Magento, Prestashop, Drupal</li>
+                    <li class="section__skill">Git, Tortoise</li>
+                    <li class="section__skill">Figma</li>
+                    <li class="section__skill">Jira, Youtrack, ClickUp</li>
+                </ul>
+            </section>
+            <section class="section" id="project">
+                <h2 class="section__title">Project</h2>
+                <ul class="section__list">
+                    <li class="section_project"><a href="https://rolling-scopes-school.github.io/aleksey-rs-JSFE2021Q1/virtual-piano/" target="_blank">Virtual piano</a></li>
+                    <li class="section_project"><a href="https://rolling-scopes-school.github.io/aleksey-rs-JSFE2021Q1/wildlife/" target="_blank">Wildlife</a></li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section__title">Code</h2>
+<pre class="section__pre">
+<code>new Ajax.Request(url, {
+method: 'get',
+    onComplete: function(transport){
+        if(transport.status==200){
+            if(transport.responseText!=0){
+                var MESSAGE = ''; var i=1;
+                var ERROR = transport.responseText.evalJSON();
+                $H(ERROR).each(function(error){
+                    MESSAGE += i +". "+error.value;
+                    i++;
+                });
+                fAlert("", __(MESSAGE));     
+                }
+            }
+        }
+    }.bind(this)
+    });
+</code>
+</pre>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section__title">Languages</h2>
+                <ul class="section__list">
+                    <li class="section__language">Belarusian/Russian <span class="language__level">(Native)</span></li>
+                    <li class="section__language">English <span class="language__level">(Intermediate - B2)</span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__list">
+                <div class="footer__logo_rs">
+                  <a href="https://rs.school/js/" class="logo_rs">
+                    <img src="./images/rs_school_js.svg" alt="rs-school" class="logo_rs">
+                  </a>
+                </div>
+                <div class="footer__year">
+                    <span>2023</span>    
+                </div>
+                <div class="footer__logo_git">
+                  <a href="https://github.com/aleksey-rs" class="logo_git">
+                    <img src="./images/git.png" alt="git" class="logo_git">
+                  </a>
+                </div>
+              </div>
+        </div>
+    </footer>
+
+  </body>
 </html>
