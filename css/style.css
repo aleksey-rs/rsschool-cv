@@ -156,10 +156,42 @@ section.profile {
 	width: 80px;
 }
 
-i.fa {
-	color: #488dd8;
-}
-
 span.language__level {
 	font-style: italic;
+}
+
+.section__skill:before, .section_project:before, .section__language:before, .section__contact:before {
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+	color: #488dd8;
+	padding-right: 8px;
+}
+
+.section__skill:before {
+	content: "\f00c";
+}
+
+.section_project:before {
+	content: "\f08d";
+}
+
+.section__language:before {
+    content: "\f1ab";
+}
+
+.section__contact:nth-child(1):before {
+    content: "\f277";
+}
+.section__contact:nth-child(2):before {
+	content: "\f0e0";
+}
+.section__contact:nth-child(3):before {
+	content: "\f17e";
+}
+.section__contact:nth-child(4):before {
+	content: "\f09b";
+}
+.section__contact:nth-child(5):before {
+	content: "\f189";
 }
