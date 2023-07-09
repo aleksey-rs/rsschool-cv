@@ -192,6 +192,3 @@ span.language__level {
 .section__contact:nth-child(4):before {
 	content: "\f09b";
 }
-.section__contact:nth-child(5):before {
-	content: "\f189";
-}
